@@ -23,13 +23,15 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".Speaker.ActivitySpeaker" />
         <activity android:name=".Speaker.DetailActivity" />
-        <activity android:name=".ReadJsonFromAssets.SpkActivity"></activity>
-        <activity android:name=".SqliteEx.Main2Activity">
+        <activity android:name=".ReadJsonFromAssets.SpkActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".SqliteEx.Main2Activity">
+
         </activity>
     </application>
 
