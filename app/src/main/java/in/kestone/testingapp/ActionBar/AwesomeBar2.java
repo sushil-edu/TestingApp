@@ -3,6 +3,7 @@ package in.kestone.testingapp.ActionBar;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.res.Configuration;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.os.Build;
@@ -22,6 +23,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -55,6 +57,9 @@ public class AwesomeBar2 extends AppCompatActivity implements ViewClickListener 
     ActionBarDrawerToggle drawerLayoutToggle;
     View parentView;
 
+    @BindView(R.id.text_image)
+    TextView text_image;
+
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +72,8 @@ public class AwesomeBar2 extends AppCompatActivity implements ViewClickListener 
         setSupportActionBar(toolbar);
 //        toolbar.setNavigationIcon(R.drawable.icon);
         parentView = findViewById(R.id.parentLayout);
+        Typeface font = Typeface.createFromAsset( getAssets(), "fontawesome-webfont.ttf" );
+        text_image.setTypeface(font);
 
         callAPI(this, parentView);
         ////material design
@@ -78,6 +85,7 @@ public class AwesomeBar2 extends AppCompatActivity implements ViewClickListener 
         final TextInputEditText email = findViewById(R.id.email_edit_text);
         final TextInputEditText password = findViewById(R.id.password_edit_text);
         textWatcher(textInputLayouts);
+
 
 
 //        final TextInputLayout inText = findViewById(R.id.name_text_input);

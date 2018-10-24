@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1efef"
+    >
+
+    <android.support.design.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:contentPadding="16dp">
+
+        <!-- LinearLayout goes here -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/border_edittext"-->
+                <!--android:elevation="4dp"-->
+                <!--android:tooltipText="Name">-->
+
+                <!--<android.support.v7.widget.AppCompatEditText-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="48sp"-->
+                    <!--android:background="@null"-->
+                    <!--android:hint="Name"-->
+                    <!--android:paddingLeft="10dp" />-->
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/name_text_input"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:elevation="6dp"
+                app:boxCornerRadiusBottomLeft="4dp"
+                app:boxCornerRadiusBottomRight="4dp"
+                app:boxCornerRadiusTopLeft="4dp"
+                app:boxCornerRadiusTopRight="4dp"
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/name_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:singleLine="true"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="10"
+                    android:paddingRight="20dp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/email_text_input"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:elevation="6dp"
+                app:boxCornerRadiusBottomLeft="4dp"
+                app:boxCornerRadiusBottomRight="4dp"
+                app:boxCornerRadiusTopLeft="4dp"
+                app:boxCornerRadiusTopRight="4dp"
+                android:layout_marginTop="10dp"
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/email_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:paddingRight="20dp"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/phone_text_input"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:elevation="6dp"
+                app:boxCornerRadiusBottomLeft="4dp"
+                app:boxCornerRadiusBottomRight="4dp"
+                app:boxCornerRadiusTopLeft="4dp"
+                app:boxCornerRadiusTopRight="4dp"
+                android:layout_marginTop="10dp"
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/password_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleDrawable="@drawable/cell"
+                    android:paddingRight="20dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/save_button"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:elevation="8dp"
+                android:text="Save"
+                android:textAllCaps="false" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fontawesome Example"/>
+
+            <TextView
+                android:id="@+id/text_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fa_question_circle"/>
+        </LinearLayout>
+    </android.support.design.card.MaterialCardView>
+
+</android.support.v4.widget.NestedScrollView>

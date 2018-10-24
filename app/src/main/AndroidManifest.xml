@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="in.kestone.testingapp">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -10,6 +11,12 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+
 
     <application
         android:allowBackup="true"
@@ -23,15 +30,26 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".Speaker.ActivitySpeaker" />
         <activity android:name=".Speaker.DetailActivity" />
-        <activity android:name=".ReadJsonFromAssets.SpkActivity">
+        <activity android:name=".ReadJsonFromAssets.SpkActivity" />
+        <activity android:name=".SqliteEx.Main2Activity" />
+        <activity
+            android:name=".ActionBar.AwesomeBar2"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".DataBindingEx.DataBindingActivity" />
+        <activity android:name=".ButtomSheet.ActivityBottomSheet" />
+        <activity android:name=".DownloadFile.Main3Activity" />
+        <activity android:name=".DownloadFile.DownloadList" />
+        <activity android:name=".GetLocation" />
+        <activity android:name=".FingerPrint"></activity>
+        <activity android:name=".FetchLocation">
+
+        </activity>
+        <activity android:name=".ActivityLogation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".SqliteEx.Main2Activity">
-
         </activity>
     </application>
 

@@ -1,9 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Sinch.Main3Activity">
+    android:orientation="vertical"
+    tools:context=".DownloadFile.Main3Activity">
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/CheckFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CheckFile"
+        android:textAllCaps="false" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/item1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Item 1"-->
+            <!--android:textAllCaps="false" />-->
+        <!--<Button-->
+            <!--android:id="@+id/btn_delete1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Delete"-->
+            <!--android:layout_alignParentRight="true"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/item2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Item 2"-->
+            <!--android:textAllCaps="false" />-->
+        <!--<Button-->
+            <!--android:id="@+id/btn_delete2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Delete"-->
+            <!--android:layout_alignParentRight="true"/>-->
+    <!--</RelativeLayout>-->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/item3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Item 3"-->
+            <!--android:textAllCaps="false" />-->
+        <!--<Button-->
+            <!--android:id="@+id/btn_delete3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Delete"-->
+            <!--android:layout_alignParentRight="true"/>-->
+    <!--</RelativeLayout>-->
+
+</LinearLayout>
